@@ -4,7 +4,7 @@ const AgeCounting = () => {
     const [allAges, setAllAges] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/ages')
+        fetch('https://simple-node-server-nine.vercel.app/ages')
             .then(res => res.json())
             .then(data => {
                 setAllAges(data);
